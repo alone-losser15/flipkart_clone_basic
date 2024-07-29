@@ -1,0 +1,55 @@
+.heading{
+    width: 99%;
+    height: 40px;
+    padding: 15px 10px;
+    background-color: #2a55e5;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    
+    font-size: 30px;
+}
+
+.grid-box{
+    /* width:95%; */
+    margin: 15px 20px 10px 20px;
+    display: grid;
+    font-size: 20px;
+    grid-template-columns:20px 260px 560px 140px 140px;
+    column-gap: 10px;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px groove rgba(169, 166, 166, 0.834);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.grid-box img{
+    width:200px;
+    height: 160px;
+}
+.grid-box input{
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.baseline{
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    align-items: center;
+    left: 290px ;
+}
+.baseline button{
+    
+    width: 250px;
+    margin: 10px 30px;
+    padding: 10px;
+    background-color: orangered;
+    border: 2px outset white;
+    border-radius: 10px;
+}
+.baseline button a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}

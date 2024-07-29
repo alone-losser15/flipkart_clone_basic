@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./home.html">Home</a>
+            <a href="./category.html">Categeory</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a>
+        </nav>
+
+        <form action="#" class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">
+                <i class='bx bx-search'></i>
+            </button>
+        </form>
+    </header>
+    <div class="container">
+        <div class="content">
+            <img src="../img/quickmart.jpg" alt="" width="200px" height="100px">
+            <br>
+            <h2 id="content_head"> WELCOME !!!</h2>
+            <br>
+            
+            <p id="details">This is a e-commerce website for your convenice shopping </p>
+            <br>
+            <div class="continue_shoping"></div>
+            <p class="icons"></p>
+        </div>
+        <div class="login-page">
+            <h2 id="login_head">LOGIN</h2>
+            <br>
+            <form name="loginform">
+                <br>
+                <label for="username"> User name:</label>
+                <br>
+                <input type="text" id="username1" placeholder="username must be valid">
+                <br>
+                <label for="password"> Password:</label>
+                <br>
+                <input type="password" id="password1">
+                <br>
+                <label for="password"> Re type password</label>
+                <br>
+                <input type="password" id="repassword1">
+                <!-- <label for="dob"> Date of birth:</label>
+                <br>
+                <input type="date" placeholder="mm/dd/yyyy" id="dob"> -->
+                <br>
+                <button id="submit" onclick="loginC()">Submit</button>
+                <br>
+                
+            </form>
+            <!-- <div id="refrence" align="center"><a href="registration.html" id="refrence" align="center">  Want to create a new account</a></div> -->
+        </div>
+    </div>
+</body>
+</html>

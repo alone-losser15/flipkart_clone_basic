@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+        .gridbox{
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: 90px 195px;
+            row-gap: 2px;
+            column-gap: 3px;
+            background-color: transparent;
+            padding: 5px;
+        }
+                
+        .gridbox  div {
+            /* background-color: rgba(126, 120, 120, 0.8); */
+            border: 2px groove rgba(70, 68, 68, 0.789);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.31), 0 2px 3px rgba(0,0,0,0.24);
+            text-align: center;
+            padding: 2px 3px;
+            font-size: 15px;
+        } 
+        #logo{
+            margin-top: 7px;
+            text-align: center;
+            align-items: center;
+        }
+        #logo i{
+            font-size: 80px;
+        }
+        .base button{
+            margin-top: 5px;
+            border: 2px outset white;
+            border-radius: 6px;
+            padding: 2px 3px;
+            background-color: #2a55e5;
+        }
+        .base a{
+            font-size: 20px;
+            font-family: cursive;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 300px;height:300px;border:2px solid black; background:orangered;color:white;" class="profile">
+        <div id="logo"><i class='bx bxs-user-circle'></i></div>
+        <div class="gridbox">
+            <div id="user_o">Username :</div>
+            <div id="user_d">Harsh Kishor</div>
+            <div id="add_o">Address :</div>
+            <div id="add_d">H6 NIT KKR , Kurukshetra PIN code 136119</div>
+            <div id="con_o">Mobile No.:</div>
+            <div id="con_d">9307854038</div>
+            <div id="email_o">Email ID :</div>
+            <div id="email_d">harshkishor8809@gmail.com</div>
+            <script>
+                window.addEventListener('load', () =>{
+                    var User=localStorage.getItem('user_name');
+                    var Address=localStorage.getItem('address');
+                    var Contact=localStorage.getItem('contact');
+                    var Email=localStorage.getItem('email');
+                    if(User!=null){
+                        document.getElementById("gridbox").innerHTML='<div id="user_o">Username :</div><div id="user_d">'+User+'</div><div id="add_o">Address :</div><div id="add_d">'+Address+'</div><div id="con_o">Mobile No.:</div><div id="con_d">'+Contact+'</div><div id="email_o">Email ID :</div><div id="email_d">'+Email+'</div>';
+                    }
+                })
+            </script>
+        </div>
+        <div align="center" class="base"><button><a href="./loginpage.html">Login Account</a></button></div>
+    </div>
+</body>
+</html>

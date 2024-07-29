@@ -1,0 +1,210 @@
+.header1{
+    position: sticky;
+    top:0;
+}
+.head1{
+    /* position: sticky; */
+    height: 60px;
+    
+    padding: 15px 10px;
+    background-color: #2a55e5;
+    color: aliceblue;
+}
+.head2{
+    /* position: sticky; */
+    top: 0;
+    /* align-content: center; */
+    padding:15px 10px;
+    background-color:#2a55e5;
+    color: aliceblue;
+}
+.navbar a{
+    position: relative;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 27px;
+
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transform: translateY(10px);
+    transition: .4s;
+    opacity: 0;
+
+}
+.navbar a:hover{
+    color:black;
+}
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+   
+}
+.extra{
+    /* background-image: url(quickmart.jpg) url(dark.png);
+    background-color: aliceblue; */
+    width: 20%;
+    position: absolute;
+    left: 42px;
+    height: 60px;
+}
+.cart{
+    width: 8%;
+    height: 26px;
+    position: absolute;
+    right: 60px;
+}
+.cart:hover{
+    border: 2px solid white;
+    border-radius: 2px;
+}
+.login_logo{
+    width: 10%;
+    position: absolute;
+    right: 210px;
+}
+.login_logo:hover{
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.searchbar{
+    width: 400px;
+    height: 43px;
+    position: absolute;
+    right: 450px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.searchbar input{
+    padding-left: 5px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+.searchbar input::placeholder{
+    color: white;
+}
+.searchbar button {
+    cursor: pointer;
+    width: 35px;
+    height:100%;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar button i{
+    font-size: 20px;
+    color: white;
+}
+
+.grid-menu{
+    display: grid;
+    grid-template-columns:205px 205px 205px 165px 165px 165px;
+    grid-template-areas:
+        'main main main high high high'
+        'main main main high high high'
+        'main main main high high high'
+        'main main main subt subt subt';
+    background-color: transparent;
+    padding: 11px;
+    gap: 10px;
+    row-gap: 5px;
+    height: 280px;
+}
+/* .grid-menu  div {
+    background-color: rgba(126, 120, 120, 0.8);
+    
+}  */
+.item1 { grid-area: main; }
+.item2 { grid-area: high; }
+.item3 { grid-area: subt; }
+
+.item3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color: rgba(255, 68, 0, 0.867);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0 10px 10px;
+    font-size: 30px;
+    border-radius: 4px;
+    border: 1px groove rgba(169, 166, 166, 0.834);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.item2{
+    text-align: center;
+    padding: 10px 0 10px 10px;
+    font-size: 30px;
+    border-radius: 4px;
+    border: 1px groove rgba(169, 166, 166, 0.834);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.item1{
+    text-align: center;
+    padding: 10px 0 10px 10px;
+    font-size: 30px;
+    border-radius: 4px;
+    border: 1px groove rgba(169, 166, 166, 0.834);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 14px;
+    gap: 20px;
+    row-gap: 0;
+}
+  
+.grid-item {
+    background-color:#fafafa;
+    border: 3px groove #e0e0e0;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    width: 270px;
+}
+.base{
+    background-color: #f0f5ff;
+    color:#9e9e9e;
+    font-size: 10px;
+    padding: 10px;
+    font-family: monospace;
+}
+.base h3{
+    font-size: 20px;
+    color:#878787;
+    font-feature-settings: "blwm";
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bottom{
+    background-color: #212121;
+    color: aliceblue;
+    padding:10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.bottom span{
+    margin: 2px 33px;
+    color: goldenrod;
+    background-color: transparent;
+
+}

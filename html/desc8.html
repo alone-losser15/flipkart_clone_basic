@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>description</title>
+    <link rel="stylesheet" href="../css/desc.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../js/desc8.js"></script>
+
+</head>
+<body>
+    <div class="header1">
+        <div class="head1">
+            <div class="extra" align="center"><img src="../img/quickmart.jpg" alt="" height="60px" width="140px"></div>
+            <form action="#" class="searchbar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">
+                    <i class='bx bx-search'></i>
+                </button>
+
+            </form>
+            <div class="login_logo">
+                <i class='bx bx-user'></i>
+                <br>
+                Hello, sign in..
+            </div>
+            <div class="cart" onClick="cartopen()">
+                <i class='bx bx-cart-add' ></i>
+                My cart
+            </div>
+
+        </div>
+        <div class="head2">
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="category.html">Categeory</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </div>
+    <div class="grid-container">
+        <!-- <div class="item1">side menu</div> -->
+        <div class="item2_1" ><img src="../img/img53.jpg" alt="" onClick="expand1()"></div>
+        <div class="item2_2" ><img src="../img/img54.jpg" alt="" onClick="expand2()"></div>
+        <div class="item2_3" ><img src="../img/img55.jpg" alt="" onClick="expand3()"></div>
+       <!-- <div class="item2_4" ><img src="ROG 5 ULTIMATE4.jpeg" alt="" onClick="expand4()"></div>
+        <div class="item2_5" ><img src="ROG 5 ULTIMATE5.jpg" alt="" onClick="expand5()"></div>-->
+        <!-- main_img -->
+        <div class="item3" id="main_img"><img id="Product_Img" src="../img/img53.jpg" alt="" ondblclick="expand()"></div>
+        <div class="item8"><h3 id="Product_Details">ARCH FIT MULTI SPORT Sneakers For Men (White)</h3></div>
+        <div class="item7"><h3 id="Price">₹2200</h3>
+            <p>Extra ₹1200 off</p></div>
+        <div class="item4">
+            <h4>Highlights</h4>
+            <ul>
+                <li>ARCH FIT MULTI SPORT</li> 
+                <li>Inner materia:Air-cooled MF
+                </li>
+                <li>Outer material:Mesh
+                </li>
+                <li>Occasion:Casual</li>
+                <!--<li>6000 mAh Lithium Polymer Battery</li>
+                <li>Qualcomm Snapdragon 888 (SM8350) Processor</li>-->
+            </ul>
+        </div>
+        <!-- <div class="item5">
+            <h4>Available offers</h4>
+            <ul>
+                <li><i class='bx bxs-purchase-tag-alt bx-tada' ></i> Bank Offer5% Cashback on Flipkart Axis Bank Card T&C</li>
+                <li><i class='bx bxs-purchase-tag-alt bx-tada' ></i> Special PriceGet extra ₹6000 off (price inclusive of cashback/coupon)T&C</li>
+                <li><i class='bx bxs-purchase-tag-alt bx-tada' ></i> Buy for 80000 get ₹4999 off your Next Buy T&C</li>
+            </ul>
+        </div> -->
+        <div class="item5">
+            <h4>Size</h4>
+            <input type="radio" name="mysize" id="s">5
+            <input type="radio" name="mysize" id="m">6
+            <input type="radio" name="mysize" id="l">7
+            <input type="radio" name="mysize" id="xl">8
+        </div>
+        <div class="item6">
+            <a href="buypage.html"><button id="buy" onClick="buynow()">buy now</button></a>
+            <a href="mycart.html"><button id="add" onClick="addcart()">add to cart</button></a>
+        </div>
+        <!-- <div class="item9"><button>add to cart</button></div> -->
+
+    </div>
+    <div class="specification">
+    <details>
+        <summary>Specification</summary>
+        <div class="grid_box">
+            <div><h4>General</h4></div><div> </div>
+            <div>In The Box</div><div>ARCH FIT MULTI SPORT Sneakers For Men (White)</div>
+            <div>Inner material
+            </div><div>Air cooled MF</div>
+            <div>Model Name</div>
+            <div>ARCH FIT MULTI SPORT</div>
+            <div>Color</div>
+            <div>White</div>
+            <div>Ideal for</div>
+            <div>Men</div>
+            <!--<div>Sound Enhancements</div>
+            <div>ESS Sabre Quad DAC + Headphone Amplifier, Dual 7-Magnet Stereo Speaker with Dirac Tuning, Quad Microphone</div>
+            <div><h4>Display Features</h4></div>
+            <div></div>
+            <div>Display Size</div>
+            <div>17.22 cm (6.78 inch)</div>
+            <div>Resolution</div>
+            <div>2448 x 1080 Pixels</div>
+            <div>Resolution Type</div>
+            <div>Full HD+</div>
+            <div>GPU</div>
+            <div>Qualcomm Adreno 660</div>
+            <div>Display Type</div>
+            <div>Full HD+ sAMOLED Display</div>
+            <div>Other Display Features</div>
+            <div>144 Hz Refresh Rate, 300 Hz Touch Sense, HDR10+, Delta E less than 1</div>
+            <div><h4>Os & Processor Features</h4></div>
+            <div></div>
+            <div>Operating System</div>
+            <div>Android 11</div>
+            <div>Processor Type</div>
+            <div>Octa Core</div>
+            <div>Primary Clock Speed</div>
+            <div>2.84 GHz</div>
+            <div>Operating Frequency</div>
+            <div>
+                2G GSM: 850/900/1800/1900, 3G HSDPA: 800/850/900/1700/1800/1900/2100, 4G LTE: 1(2100), 2(1900), 3(1800), 4(1700/2100), 5(850), 7(2600), 8(900), 12(700), 13(700), 17(700), 18(800), 19(800), 20(800), 25(1900), 26(850), 28(700), 29(700), 30(2300), 32(1500), 66(1700/2100), 71(600), 4G TD-LTE: 34(2000), 38(2600), 39(1900), 40(2300), 41(2500), 48(3600), 42(3500), 5G:n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n66/n71/n77/n78/n79
+                </div>
+            <div>
+                <h4>Memory & Storage Features</h4>
+            </div>
+            <div></div>
+            <div>Internal Storage</div>
+            <div>512 GB</div>
+            <div>RAM</div>
+            <div>18 GB</div>
+            <div><h4>Other Details</h4></div>
+            <div></div>
+            <div>Sensors</div>
+            <div>Gyroscope, E-compass, Proximity Sensor, Ambient Light Sensor, In-display Fingerprint, Accelerator, Gyro (Support ARCore), Ultrasonic Sensor</div>
+            <div>Other Features</div>
+            <div>UFS 3.1 ROM, 2x2 MIMO, Wi-Fi Direct, MMT Split Battery Design</div>
+            <div>GPS Type</div>
+            <div>GPS (L1+L5), GLONASS, GLONASS (L1), BDS (B1/B2a), GALILEO (E1+E5a), QZSS (L1+L5), NavIC (L5)</div>
+            <div><h4>Battery & Power Features</h4></div>
+            <div></div>
+            <div>Battery Capacity</div>
+            <div>6000 mAh</div>
+            <div><h4>Dimensions</h4></div>
+            <div></div>
+            <div>Width</div>
+            <div>77.25 mm</div>
+            <div>Height</div>
+            <div>172.83 mm</div>
+            <div>Depth</div>
+            <div>10.29 mm</div>
+            <div>Weight</div>
+            <div>242 g</div>
+            <div><h4>Warranty</h4></div>
+            <div></div>
+            <div>Warranty Summary</div>
+            <div>Brand Warranty of 1 Year</div>
+            <div>Domestic Warranty</div>
+            <div>1 Year</div>-->
+        </div>
+    </details>
+
+    </div>
+    <br>
+    <div class="base">
+        <h3>Top Stories:Brand Directory</h3>
+        <p>MOST SEARCHED IN MOBILES & ACCESSORIES:ZENFONE 2 ZE551MLHTC DESIRE 500LENOVO K900 PRICEMICROMAX CANVAS DOODLE 3 A102MICROMAX A109 PRICE32GB MEMORY CARD CLASS 10GIONEE MOBILES INDIAINTEX NEW SMARTPHONESONY XPERIA MOBILES PRICE LISTXOLO MOBILE PRICEBUY MICROMAX YUREKAZTE INDIAXIAOMI REDMI 2SSAMSUNG GALAXY ESONY XPERIA ZLXOLO A500SIPHONE 6S OFFERS6S PLUS PRICE IN INDIAGIONEE S5.1 PRICEHTC 620G PRICEMI4 MOBILEMOBILE PHONE CHARGERGIONEE MOBILE PRICE IN INDIAKARBONN SMARTPHONEMOBILE COMPARESONY LATEST MOBILE 2017BEST CAMERA PHONE UNDER 15000SAMSUNG GALAXY ON5 PRICEXPERIA C3 DUAL</p>
+    </div>
+    <div class="bottom">
+        <span ><i class='bx bx-gift bx-fade-up' > Offers </i></span>
+        <span ><i class='bx bxs-help-circle bx-burst' ></i> Help </span>
+        <span ><i class='bx bx-plus-circle bx-tada' ></i> Become a seller </box-icon></i></span>
+        <span><i class='bx bxl-facebook-circle' ></i></span>
+        <span><i class='bx bxl-twitter'></i></span>
+        <span><i class='bx bxl-google-plus-circle'></i></span>
+        <span><i class='bx bx-credit-card-alt'></i></span>
+        <span><i class='bx bxs-credit-card'></i></span>
+        <span><i class='bx bxl-mastercard' ></i></span>
+    </div>
+</body>
+</html>

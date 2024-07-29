@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy now</title>
+    <link rel="stylesheet" href="../css/buy.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        function saveadd(){
+            let add=document.getElementById("tempaddress").value;
+            document.getElementById("mainaddress").innerHTML=add;
+            document.getElementById("clicking").innerHTML='<button onclick="chgadd()">change add.</button>';
+        }
+        function chgadd(){
+            document.getElementById("mainaddress").innerHTML='<textarea id="tempaddress" cols="10" rows="5"></textarea>';
+            document.getElementById("clicking").innerHTML='<button onclick="saveadd()">Save address</button>';
+        }
+        
+    </script>
+    
+</head>
+<body>
+    <div class="header1">
+        <div class="head1">
+            <div class="extra" align="center"><img src="../img/quickmart.jpg" alt="" height="60px" width="140px"></div>
+            <form action="#" class="searchbar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">
+                    <i class='bx bx-search'></i>
+                </button>
+
+            </form>
+            <div class="login_logo">
+                <i class='bx bx-user'></i>
+                <br>
+                Hello, sign in..
+            </div>
+            <div class="cart">
+                <i class='bx bx-cart-add' ></i>
+                My cart
+            </div>
+
+        </div>
+        <div class="head2">
+            <nav class="navbar">
+                <a href="./home.html">Home</a>
+                <a href="./category.html">Categeory</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./about.html">About</a>
+            </nav>
+        </div>
+    </div>
+    <div class="checkout">
+        <div id="lt">
+            ORDER SUMARRY
+        </div>
+        <div id="ct">CHECKOUT</div>
+        <div id="rt"><button><i class='bx bxs-lock' ></i></button></div>
+        
+    </div>
+    <div class="main">
+        <div class="buy_details">
+            <table class="address">
+                <tr>
+                    <th>Dilevery address</th>
+                    <td id="mainaddress">Harsh Kishor , H6 NIT KKR , Kurukshetra PIN code 136119</td>
+                    <td id="clicking"><button onclick="chgadd()">change add.</button></td>
+                </tr>
+            </table>
+            <table class="pay_option">
+                <tr>
+                    <th>Select payment option</th>
+                </tr>
+                <tr>
+                    <td> <strong>Payment option</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="pay_opt" id="cod" >
+                        <label for="cod">Cash on delivery</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="pay_opt" id="emi">
+                        <label for="emi">EMI</label> 
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="pay_opt" id="netb">
+                        <label for="netb">Net Banking</label>
+                            <select name="pay_opt" id="netb1">
+                                <option selected="" value="Default">(Pleasen select the bank)</option>
+                                <option value="Axis">Axis bank</option>
+                                <option value="BOB">Bank of baroda</option>
+                                <option value="HDFC">HDFC bank</option>
+                                <option value="SBI">State bank of india</option>
+                                <option value="ICICI">ICICI bank</option>
+                            </select>
+                    </td>
+                </tr>    
+            </table>
+
+        </div>
+        <div class="item_details">
+            <div class="thead">
+                <button>Use this payment method</button>
+                <div id="para">Choose a payment method to continue checking out. You will still have a chance to review and edit your order before it is final.</div>
+            </div>
+            <table class="summary">
+                <tr colspan="2">
+                    <th>Order Summary</th>
+                </tr>
+                <tr>
+                    <td>items</td>
+                    <td class="price" id="pro_price">.....</td>
+                </tr>
+                <tr>
+                    <td>Delivery</td>
+                    <td class="price" id="delivery_charges">.....</td>
+                </tr>
+                <tr>
+                    <td>Offer</td>
+                    <td class="price" id="offers">.....</td>
+                </tr>
+                <tr class="tfoot">
+                    <td>Total Amount</td>
+                    <td class="price" id="total_price">.....</td>
+                </tr>
+            </table>
+            <script src="../js/buy.js"></script>
+            <button align="center" id="confirm" onclick="confirmcheck()">Confirm To Buy</button>
+            <script>
+                function confirmcheck(){
+                    var selected=document.querySelector('input[name="pay_opt"]:checked');
+                    var add=document.getElementById("mainaddress").innerHTML;
+                    if(selected){
+                        if(add!=""){
+                            alert('Congratulationsc !!! your order is placed ');
+                        }
+                    }else{
+                        alert('please select a the payment option or enter the address');
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4>Need help? Check our help pages or <a href="#">contact us</a></h4>
+        <p>When your order is placed, we'll send you an e-mail message acknowledging receipt of your order. If you choose to pay using an electronic payment method (credit card, debit card or net banking), you will be directed to your bank's website to complete your payment. Your contract to purchase an item will not be complete until we receive your electronic payment and dispatch your item. If you choose to pay using Pay on Delivery (POD), you can pay using cash/card/net banking when you receive your item.
+        </p>
+        <h4>See Quickmart's<a href="#"> Return Policy </a>.</h4>
+    </footer>
+    
+</body>
+</html>
