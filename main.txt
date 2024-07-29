@@ -1,0 +1,2 @@
+for start used to open the html/home.html file with go live extention .
+basic prototype
